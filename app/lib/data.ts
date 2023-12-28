@@ -10,6 +10,7 @@ import {
 } from './definitions';
 import { formatCurrency } from './utils';
 import { unstable_noStore as noStore} from 'next/cache';
+import { invoices } from './placeholder-data';
 
 export async function fetchRevenue() {
   // Add noStore() here prevent the response from being cached.
@@ -160,16 +161,14 @@ export async function fetchInvoiceById(id: string) {
       FROM invoices
       WHERE invoices.id = ${id};
     `;
-
     const invoice = data.rows.map((invoice) => ({
       ...invoice,
       // Convert amount from cents to dollars
       amount: invoice.amount / 100,
     }));
-
     return invoice[0];
   } catch (error) {
-    console.error('Database Error:', error);
+
     throw new Error('Failed to fetch invoice.');
   }
 }
