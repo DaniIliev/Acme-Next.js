@@ -1005,11 +1005,6 @@ select {
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
-.space-y-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1019,6 +1014,11 @@ select {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.625rem * var(--tw-space-y-reverse));
+}
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 .divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
@@ -1340,13 +1340,13 @@ select {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -1564,6 +1564,10 @@ input[type='number']::-webkit-outer-spin-button {
     grid-column: span 4 / span 4;
   }
 
+  .md\:-mt-32 {
+    margin-top: -8rem;
+  }
+
   .md\:ml-4 {
     margin-left: 1rem;
   }
@@ -1574,10 +1578,6 @@ input[type='number']::-webkit-outer-spin-button {
 
   .md\:mt-8 {
     margin-top: 2rem;
-  }
-
-  .md\:-mt-32 {
-    margin-top: -8rem;
   }
 
   .md\:block {
@@ -1592,16 +1592,16 @@ input[type='number']::-webkit-outer-spin-button {
     display: none;
   }
 
+  .md\:h-36 {
+    height: 9rem;
+  }
+
   .md\:h-40 {
     height: 10rem;
   }
 
   .md\:h-52 {
     height: 13rem;
-  }
-
-  .md\:h-36 {
-    height: 9rem;
   }
 
   .md\:h-screen {
@@ -1616,6 +1616,10 @@ input[type='number']::-webkit-outer-spin-button {
     width: 60%;
   }
 
+  .md\:w-36 {
+    width: 9rem;
+  }
+
   .md\:w-40 {
     width: 10rem;
   }
@@ -1626,10 +1630,6 @@ input[type='number']::-webkit-outer-spin-button {
 
   .md\:w-64 {
     width: 16rem;
-  }
-
-  .md\:w-36 {
-    width: 9rem;
   }
 
   .md\:flex-none {
