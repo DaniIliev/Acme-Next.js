@@ -719,6 +719,10 @@ select {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -899,6 +903,9 @@ select {
 .min-w-full {
   min-width: 100%;
 }
+.max-w-\[400px\] {
+  max-width: 400px;
+}
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1002,6 +1009,16 @@ select {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+.space-y-2\.5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.625rem * var(--tw-space-y-reverse));
 }
 .divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
@@ -1559,6 +1576,10 @@ input[type='number']::-webkit-outer-spin-button {
     margin-top: 2rem;
   }
 
+  .md\:-mt-32 {
+    margin-top: -8rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1579,6 +1600,14 @@ input[type='number']::-webkit-outer-spin-button {
     height: 13rem;
   }
 
+  .md\:h-36 {
+    height: 9rem;
+  }
+
+  .md\:h-screen {
+    height: 100vh;
+  }
+
   .md\:w-2\/5 {
     width: 40%;
   }
@@ -1597,6 +1626,10 @@ input[type='number']::-webkit-outer-spin-button {
 
   .md\:w-64 {
     width: 16rem;
+  }
+
+  .md\:w-36 {
+    width: 9rem;
   }
 
   .md\:flex-none {

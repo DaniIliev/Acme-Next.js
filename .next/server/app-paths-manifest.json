@@ -1,6 +1,6 @@
 {
-  "/dashboard/(overview)/page": "app/dashboard/(overview)/page.js",
-  "/dashboard/invoices/page": "app/dashboard/invoices/page.js",
+  "/dashboard/invoices/[id]/edit/page": "app/dashboard/invoices/[id]/edit/page.js",
   "/dashboard/invoices/create/page": "app/dashboard/invoices/create/page.js",
-  "/dashboard/invoices/[id]/edit/page": "app/dashboard/invoices/[id]/edit/page.js"
+  "/dashboard/invoices/page": "app/dashboard/invoices/page.js",
+  "/dashboard/(overview)/page": "app/dashboard/(overview)/page.js"
 }
